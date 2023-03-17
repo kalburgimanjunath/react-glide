@@ -35,3 +35,12 @@ body {
 .projects div {
   justify-content: 'left';
 }
+.button-icon-container {
+  display: flex;
+}
+.button-icon {
+  border-radius: 20;
+  border: 1px solid #d7d7d7;
+  padding: 10px;
+  margin: 5px;
+}
