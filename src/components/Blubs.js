@@ -9,6 +9,7 @@ export default function Blubs({ items }) {
           return (
             <div>
               <Link to={`../details/:${item}`}>{item}</Link>
+              <p>no users</p>
             </div>
           );
         })}

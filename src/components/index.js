@@ -1,3 +1,4 @@
 import Sidebar from './Sidebar';
 import Main from './Main';
-export { Sidebar, Main };
+import Widgets from './Widgets';
+export { Sidebar, Main, Widgets };

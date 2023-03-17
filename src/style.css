@@ -1,18 +1,15 @@
 .blubs {
   display: 'flex';
+  flex-direction: 'row';
 }
 .blubs div {
   padding: 20px;
   background-color: 'red';
   /* min-width: 200px; */
   border: 1px Solid #d7d7d7;
-  display: 'flex';
-}
-.projects {
 }
 
 .projects div {
-  justify-content: 'center';
+  justify-content: 'left';
   max-width: '25%';
-  display: flex;
 }
