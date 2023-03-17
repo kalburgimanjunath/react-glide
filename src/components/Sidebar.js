@@ -8,7 +8,7 @@ export default function Sidebar({ menuitems }) {
   const { id } = useParams();
   const [menus, setMenus] = useState(newmenuitems);
   return (
-    <div>
+    <div style={{ flex: 1, borderRight: '1px solid #d0d0d0' }}>
       <ul>
         {menus.map((item) => {
           return (

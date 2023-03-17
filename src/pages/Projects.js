@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sidebar, Main, Widgets } from '../components/';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 export default function Projects() {
   const { id } = useParams();
   const menuitems = ['Navigations', 'Menus', 'Components'];
@@ -15,19 +15,22 @@ export default function Projects() {
     'details',
   ];
   return (
-    <>
+    <div style={{ display: 'flex' }}>
       <Sidebar menuitems={menuitems} />
-      <div>
+      <div style={{ flex: 2, padding: 20 }}>
         <h5>My Team</h5>
-        <div>Data | Design | Settings</div>
+        <div>
+          <Link to="">Data</Link> | <Link to="">Design</Link> |
+          <Link to="">Settings</Link>
+        </div>
         {id}
       </div>
-      <div>
+      <div style={{ flex: 1 }}>
         Side Nav Widget
         <Widgets title="New Tab" />
         <Widgets title="Tabs" />
         <Widgets title="Style" style={style} />
       </div>
-    </>
+    </div>
   );
 }

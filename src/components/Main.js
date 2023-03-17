@@ -13,7 +13,7 @@ export default function Main({ title }) {
     'Project8',
   ];
   return (
-    <div>
+    <div className="main">
       <h5>{title}</h5>
       <div className="projects">
         <Blubs items={items} />

@@ -1,15 +1,37 @@
-.blubs {
-  display: 'flex';
-  flex-direction: 'row';
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
-.blubs div {
+.main {
+  background-color: #d7d7d7;
+  margin: 20px;
   padding: 20px;
-  background-color: 'red';
-  /* min-width: 200px; */
+  flex: 1;
+}
+.blubs {
+  display: inline-flex;
+}
+
+.blubs .item {
+  padding: 40px;
+  background-color: #fff;
   border: 1px Solid #d7d7d7;
+  border-radius: 10px;
+  margin: 10px;
+  color: #303030;
+  font-weight: normal;
+}
+.blubs .item:hover {
+  scale: 1.01;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 0px 2px 0px 0px #000;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .projects div {
   justify-content: 'left';
-  max-width: '25%';
 }
