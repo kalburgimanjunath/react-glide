@@ -18,13 +18,13 @@ export default function InsertComponents() {
       pickers: [],
     },
     {
-      lists: [],
+      lists: ['list relation', 'inline list'],
     },
     {
-      media: [],
+      media: ['map', 'image', 'audio', 'video', 'web embed'],
     },
     {
-      charts: [],
+      charts: ['progress bar', 'charts'],
     },
   ];
   const ChildTemp = ({ items }) => {
@@ -52,7 +52,7 @@ export default function InsertComponents() {
   };
 
   return (
-    <div style={{ flex: 1, borderRight: '1px solid #d0d0d0' }}>
+    <div style={{ flex: 1, borderRight: '1px solid #d0d0d0', margin: 20 }}>
       <h4>Insert Component</h4>
       <input type="text" placeholder="Filter Components" />
       {/* component list */}
