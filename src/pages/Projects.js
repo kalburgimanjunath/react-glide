@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sidebar, Main, Widgets } from '../components/';
+import { Sidebar, Main, Widgets, InsertComponents } from '../components/';
 import { useParams, Link } from 'react-router-dom';
 export default function Projects() {
   const { id } = useParams();
@@ -17,7 +17,8 @@ export default function Projects() {
   return (
     <div style={{ display: 'flex' }}>
       <Sidebar menuitems={menuitems} />
-      <div style={{ flex: 2, padding: 20 }}>
+      <InsertComponents />
+      <div style={{ flex: 1, padding: 20 }}>
         <h5>My Team</h5>
         <div>
           <Link to="">Data</Link> | <Link to="">Design</Link> |
@@ -27,7 +28,16 @@ export default function Projects() {
       </div>
       <div style={{ flex: 1 }}>
         Side Nav Widget
-        <Widgets title="New Tab" />
+        <Widgets title="New Tab">
+          <div>
+            Data Source:
+            <input type="text" />
+          </div>
+          <div>
+            Label:
+            <input type="text" placeholder="New Tab" />
+          </div>
+        </Widgets>
         <Widgets title="Tabs" />
         <Widgets title="Style" style={style} />
       </div>
